@@ -1,4 +1,7 @@
 import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+import sys
+sys.path.remove('/opt/ros/kinetic/lib/python2.7/dist-packages')
 import gym
 import pdb
 import time

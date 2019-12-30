@@ -1,4 +1,7 @@
 import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
+import sys
+sys.path.remove('/opt/ros/kinetic/lib/python2.7/dist-packages')
 import time
 
 from cs285.infrastructure.rl_trainer import RL_Trainer

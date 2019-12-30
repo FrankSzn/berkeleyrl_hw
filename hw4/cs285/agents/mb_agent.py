@@ -47,10 +47,11 @@ class MBAgent(BaseAgent):
             
             # select which datapoints to use for this model of the ensemble
             # you might find the num_data_per_env variable defined above useful
-
-            observations = # TODO(Q1)
-            actions = # TODO(Q1)
-            next_observations = # TODO(Q1)
+            b = i * num_data_per_ens
+            e = (i+1) * num_data_per_ens
+            observations = ob_no[b:e]# TODO(Q1)
+            actions = ac_na[b:e]# TODO(Q1)
+            next_observations =  # TODO(Q1)
 
             # use datapoints to update one of the dyn_models
             model =  # TODO(Q1)

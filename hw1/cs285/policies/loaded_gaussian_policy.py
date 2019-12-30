@@ -3,7 +3,7 @@ import tensorflow as tf
 from .base_policy import BasePolicy
 import tensorflow_probability as tfp
 import pickle
-
+from cs285.infrastructure.tf_utils import lrelu
 class Loaded_Gaussian_Policy(BasePolicy):
     def __init__(self, sess, filename, **kwargs):
         super().__init__(**kwargs)
